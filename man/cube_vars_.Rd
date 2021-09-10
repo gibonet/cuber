@@ -4,8 +4,14 @@
 \alias{cube_vars_}
 \title{Create a (partial) data cube and store it in a list}
 \usage{
-cube_vars_(.data, .list_vars, sep = ".", fun_list = list(n = ~nrow(.data)),
-  .all = FALSE, ...)
+cube_vars_(
+  .data,
+  .list_vars,
+  sep = ".",
+  fun_list = list(n = ~nrow(.data)),
+  .all = FALSE,
+  ...
+)
 }
 \arguments{
 \item{.data}{a data frame.}

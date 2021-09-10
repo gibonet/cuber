@@ -20,7 +20,6 @@ a named list with the results of the function calls applied to the data frame.
 Apply a list of function calls to a data frame and return the results in a list
 }
 \examples{
-data(invented_wages)
 str(invented_wages)
 
 # First create a list of function calls (with formulas)

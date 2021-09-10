@@ -19,7 +19,6 @@ the values of the estimated statistics (default: "value").}
 Put the results of 'apply_' in a data frame
 }
 \examples{
-data(invented_wages)
 str(invented_wages)
 
 # First create a list of function calls (with formulas)

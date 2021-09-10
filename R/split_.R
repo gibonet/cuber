@@ -1,6 +1,4 @@
 
-# Una versione di split che prenda come argomento un vettore
-# character con i nomi delle variabili su cui splittare
 
 #' Split a data frame in groups based on variables
 #' 

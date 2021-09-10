@@ -4,8 +4,13 @@
 \alias{split_apply_df_}
 \title{Apply a list of function calls to groups of a data frame}
 \usage{
-split_apply_df_(.data, .vars, sep = ".", fun_list = list(n = ~nrow(.data)),
-  ...)
+split_apply_df_(
+  .data,
+  .vars,
+  sep = ".",
+  fun_list = list(n = ~nrow(.data)),
+  ...
+)
 }
 \arguments{
 \item{.data}{a data frame.}

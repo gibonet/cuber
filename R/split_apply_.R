@@ -1,17 +1,4 @@
 
-# Un'idea è quella di salvare i risultati in un data frame con:
-# - una colonna con il nome della statistica (m1, s)
-# - una colonna per ogni variabile (in questo caso solo una colonna con il gender)
-# - una colonna con il valore delle stime
-
-# Alla prima colonna posso dare il nome 'misura' o 'statistica' (o qualcosa del genere)
-# Alle colonne successive (tranne l'ultima, che contiene il valore delle stime svolte)
-# vanno dati i nomi delle variabili corrispondenti (in questo esempio 'gender')
-
-# Faccio una funzione tipo split_apply_, e/o apply_
-# Prima apply_, che in sé dovrebbe essere una funzione simile a dplyr::summarise_
-# con l'argomento .dots che è una lista di formule con le funzioni da applicare 
-# al data frame.
 
 #' Apply a list of function calls to a data frame and return the results in a list
 #' 
@@ -23,7 +10,6 @@
 #' @return a named list with the results of the function calls applied to the data frame.
 #' 
 #' @examples 
-#' data(invented_wages)
 #' str(invented_wages)
 #' 
 #' # First create a list of function calls (with formulas)
@@ -37,6 +23,7 @@ apply_ <- function(.data, fun_list = list(n = ~nrow(.data))){
   res_list
 }
 
+
 #' Put the results of 'apply_' in a data frame
 #' 
 #' @param .list the output of \code{\link{apply_}}.
@@ -46,7 +33,6 @@ apply_ <- function(.data, fun_list = list(n = ~nrow(.data))){
 #'  the values of the estimated statistics (default: "value").
 #' 
 #' @examples 
-#' data(invented_wages)
 #' str(invented_wages)
 #' 
 #' # First create a list of function calls (with formulas)
@@ -69,6 +55,9 @@ apply_to_df_ <- function(.list, estimator_name = "estimator", value = "value"){
   row.names(df) <- as.character(1:nrow(df))
   return(df)
 }
+
+
+
 
 #' Apply a list of function calls to a data frame and return the results in a data frame
 #' 

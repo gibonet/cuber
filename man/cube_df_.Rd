@@ -4,8 +4,14 @@
 \alias{cube_df_}
 \title{Create a data cube and store it in a data frame}
 \usage{
-cube_df_(.data, .vars, sep = ".", fun_list = list(n = ~nrow(.data)),
-  .total = "Totale", ...)
+cube_df_(
+  .data,
+  .vars,
+  sep = ".",
+  fun_list = list(n = ~nrow(.data)),
+  .total = "Totale",
+  ...
+)
 }
 \arguments{
 \item{.data}{a data frame.}

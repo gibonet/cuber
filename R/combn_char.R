@@ -1,13 +1,14 @@
+#' @importFrom utils combn
+
 
 # Partendo da un numero intero, k, genera una lista i cui elementi saranno 
 # delle matrici con degli indici in riga e ogni colonna che rappresenta una
 # combinazione. Le combinazioni k - (k-i) vengono generate per `i` che va da 
 # 1 a k (combn(3, 1), combn(3, 2), combn(3, 3))
-combn_l <- function(k) lapply(1:k, function(x) combn(k, m = k - x + 1))
 # combn_l(3)
+combn_l <- function(k) lapply(1:k, function(x) combn(k, m = k - x + 1))
 
 
-# Funzione che genera tutte le combinazioni degli elementi di un vettore character
 
 #' Generate all combinations of the elements of a character vector
 #' 

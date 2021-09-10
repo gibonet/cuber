@@ -4,8 +4,7 @@
 \alias{res2df}
 \title{Put the results of 'split_apply_' in a data frame}
 \usage{
-res2df(.nested_list, sep = ".", estimator_name = "estimator",
-  value = "value")
+res2df(.nested_list, sep = ".", estimator_name = "estimator", value = "value")
 }
 \arguments{
 \item{.nested_list}{a nested list, the output of \code{split_apply_}.}

@@ -6,13 +6,14 @@ Version: 0.0.1
 License: GPL-2
 Depends:
     R (>= 2.10)
-Author: Sandro Petrillo Burri <gibo.gaf@gmail.com>
-Maintainer: Sandro Petrillo Burri <gibo.gaf@gmail.com>
-RoxygenNote: 6.0.0
+Imports: utils
+Author: Gibo <gibo.gaf@gmail.com>
+Maintainer: Gibo <gibo.gaf@gmail.com>
+RoxygenNote: 7.1.1
 Collate:
   "invented_data.R"
   "split_.R"
   "combn_char.R"
   "split_apply_.R"
-  
-
+LazyData: true
+Encoding: UTF-8
