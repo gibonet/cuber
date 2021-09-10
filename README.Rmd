@@ -16,4 +16,5 @@ knitr::opts_chunk$set(
 
 # cuber
 
-[![Travis-CI Build Status](https://travis-ci.org/gibonet/cuber.svg?branch=master)](https://travis-ci.org/gibonet/cuber)
+[![R build status](https://github.com/gibonet/cuber/workflows/R-CMD-check/badge.svg)](https://github.com/gibonet/cuber/actions)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/cuber)](http://cran.r-project.org/package=cuber)
