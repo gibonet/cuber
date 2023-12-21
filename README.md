@@ -2,6 +2,5 @@
 
 # cuber
 
-[![R build
-status](https://github.com/gibonet/cuber/workflows/R-CMD-check/badge.svg)](https://github.com/gibonet/cuber/actions)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/cuber)](http://cran.r-project.org/package=cuber)
+[![R-CMD-check](https://github.com/gibonet/cuber/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gibonet/cuber/actions/workflows/R-CMD-check.yaml)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/cuber)](http://cran.r-project.org/package=cuber)

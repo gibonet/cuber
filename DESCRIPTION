@@ -9,7 +9,7 @@ Depends:
 Imports: utils
 Author: Gibo <gibo.gaf@gmail.com>
 Maintainer: Gibo <gibo.gaf@gmail.com>
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 Collate:
   "invented_data.R"
   "split_.R"
