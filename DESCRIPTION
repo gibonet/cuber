@@ -2,15 +2,16 @@ Package: cuber
 Title: Tools to Create Data Cubes
 Description: Tools to create data cubes. A data cube is a summary of a dataset
     with estimated statistics for all the combinations of the desired variables.
-Version: 0.0.1
+Version: 0.0.2
 License: GPL-2
 Depends:
     R (>= 2.10)
 Imports: utils
 Author: Gibo <gibo.gaf@gmail.com>
 Maintainer: Gibo <gibo.gaf@gmail.com>
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Collate:
+  "cuber-package.R"
   "invented_data.R"
   "split_.R"
   "combn_char.R"
