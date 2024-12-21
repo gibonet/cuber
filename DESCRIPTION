@@ -18,3 +18,7 @@ Collate:
   "split_apply_.R"
 LazyData: true
 Encoding: UTF-8
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
