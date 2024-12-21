@@ -1,0 +1,37 @@
+---
+title: "cuber"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{cuber}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(cuber)
+str(invented_wages)
+```
+
+First create a list of function calls (with formulas) and
+a vector with names of the desired variables
+```{r}
+fun <- list(
+  m1 = ~weighted.mean(wage, sample_weights), 
+  s = ~sum(sample_weights)
+)
+vars <- c("gender")
+```
+
+Then create the data cube, with the estimates of all the combinations
+of variables:
+```{r}
+cube_df_(invented_wages, .vars = vars, fun_list = fun)
+```
+
