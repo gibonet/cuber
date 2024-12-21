@@ -5,3 +5,7 @@
 ^\.travis\.yml$
 \.github
 ^\.github$
+check.R
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
